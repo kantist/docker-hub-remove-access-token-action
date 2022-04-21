@@ -1,0 +1,15 @@
+name: 'Docker Hub Remove Access Token'
+description: 'Remove a Docker Hub access token using Docker Hub API'
+inputs:
+  username:
+    description: "The username of the Docker Hub account to authenticate with"
+    required: true
+  password:
+    description: "The password or personal access token (PAT) of the Docker Hub account to authenticate with"
+    required: true
+  uuid:
+    description: "UUID of the access token"
+    required: true
+runs:
+  using: 'node16'
+  main: 'index.js'
